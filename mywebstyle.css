@@ -1,0 +1,473 @@
+/*FONTS*/
+@font-face {
+  font-family: 'roboto';
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'roboto-thin';
+  src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'roboto-lightitalic';
+  src: url(fonts/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'luna';
+  src: url(fonts/Luna.ttf);
+}
+
+body, html {
+  height: 100%;
+  color:#1E0303;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+
+  /*overflow-x: hidden;*/
+}
+
+header {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30vw 0 5vw;
+  background-image: url("pics/landscape.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header2 {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30vw 0 5vw;
+  background-image: url("pics/landscape2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header3 {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30vw 0 5vw;
+  background-image: url("pics/landscape3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+  font-family: luna;
+  transition: color 5s;
+}
+
+h2 {
+  font-family: roboto;
+  font-size: 250%;
+}
+
+p {
+  color: #0B132B;
+  font-family: roboto-thin;
+}
+
+.roboto-font {
+  font-family: roboto-thin;
+  font-size: 3vmin;
+}
+
+.bg-color {
+  background-color: #FFE2E0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.footer {
+  padding-left: 5em;
+}
+
+* {box-sizing:border-box}
+
+img {vertical-align: middle;}
+
+.column {
+
+}
+
+/*
+.parallax {
+  display: block;
+  background-image: url("pics/landscape.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+#lisa {
+    letter-spacing: 2em;
+    color: #1E0303;
+}
+
+/*
+#navbar-logo {
+  position: fixed;
+  text-align: center;
+  float: left;
+  left: 1em;
+  letter-spacing: 0.5em;
+  color:#1E0303;
+  font-size: 1em;
+  text-decoration: none;
+  z-index: 20;
+
+}*/
+
+.lh-logo {
+  /* width: 5em; */
+  z-index: 30;
+  position:relative;
+  display: block;
+  margin-left: auto;
+}
+
+#navbar-myname {
+  font-family: roboto;
+  font-size: 2.5em;
+  z-index: 30;
+  position:relative;
+  display: block;
+  float:right;
+  padding-right: 0.25em;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #1E0303;
+}
+
+.spacing {
+  letter-spacing: 1em;
+}
+
+.bolded {
+  font-family: roboto-bold;
+}
+
+.italics {
+  font-family: roboto-lightitalic;
+}
+
+/*.img-container {
+  text-align: center;
+  color: white;
+}*/
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*SLIDESHOW*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin:auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding:16px;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #1E0303;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding:8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.button-style {
+  background-color: #DD8C86;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  background-color:#CC8B86;
+}
+
+.button-style2 {
+  background-color: #955F9D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-style2:hover {
+  background-color:#0B132B;
+  transition: background-color 1s ease;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+  background-color: #CC8B86;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: roboto-thin;
+}
+
+.navbar a {
+  position: relative;
+  float:left;
+  border-radius: 1px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none; /*takes away the underline and other features of the text*/
+  font-size: 17px;
+}
+
+.navbar h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.navbar a:hover{
+  background: #FFE2E0;
+  color:#1E0303;
+  margin: 0;
+  transition: background-color 1s;
+}
+
+/*DROP-DOWN MENU*/
+.dropbutton {
+  background-color: #CC8B86;
+  color: white;
+  padding: 16px;
+  font-size:17px;
+  font-family: roboto-thin;
+  border: none;
+  cursor: pointer;
+  position:relative;
+  left: 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*change color of drop down links on hover*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/*show menu on hover*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*change bg color of dropdown button when content is shown*/
+.dropdown:hover .dropbutton {
+  background: #FFE2E0;
+  color:#1E0303;
+  margin: 0;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+.container2 {
+
+}
+
+.socials {
+  float:left;
+  padding-left: 5em;
+}
+
+/*LOGOS*/
+#pinterest {
+  width: 2em;
+}
+
+#instagram {
+  width: 2em;
+}
+
+#rb {
+  width: 2em;
+}
+
+/*PICTURES SETTINGS*/
+#yulie2 {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#acrylicpainting {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  width: 50%;
+  transform: rotate(90deg);
+}
+
+#blocks {
+  transform: rotate(90deg);
+}
+
+#alliex {
+  width: 400px;
+}
+
+#yulie {
+  padding: 10px 10px;
+  width: 300px;
+}
+
+/*FORM (CONTACT ME)*/
+input[type=text],select,textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #CC8B86;
+  color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #FFE2E0;
+  padding: 20px;
+}
