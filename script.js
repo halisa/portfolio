@@ -14,8 +14,16 @@ function openLanternGirl() {
   window.location="https://www.instagram.com/p/BnKTCxWF1jt/";
 }
 
+function openScratchGame() {
+  window.location="https://scratch.mit.edu/projects/320967486/";
+}
+
 function openPortfolioWebsite() {
   window.location="https://halisa.github.io/portfolio/index.html";
+}
+
+function openIsospaceGame() {
+  window.location="https://3d-environment-game.glitch.me/";
 }
 
 // function showAllProjects() {
