@@ -1,36 +1,34 @@
-// function buttonFunction(){
-//   document.getElementById("lisa").innerHTML = "Hello World";
+function openNavBar() {
+  document.getElementById("navbar").style.width = "50%";
+}
+
+function closeNavBar() {
+  document.getElementById("navbar").style.width = "0%";
+}
+
+function openCloudyDays() {
+  window.location="https://halisa.itch.io/cloudy-days";
+}
+
+function openLanternGirl() {
+  window.location="https://www.instagram.com/p/BnKTCxWF1jt/";
+}
+
+function openPortfolioWebsite() {
+  window.location="https://halisa.github.io/portfolio/index.html";
+}
+
+// function showAllProjects() {
+//   document.getElementByClass("game").style.width = "50%";
 // }
 
-//which slide it is on
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function showArtProjects() {
+  // document.getElementByClass("artwork").style.display = block;
+  document.getElementByClass("game").style.display = none;
+  alert("Hi");
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {slideIndex = 1}
-
-  if (n < 1) {slideIndex = slides.length}
-
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function showGameProjects() {
+  document.getElementByClass("game").style.display = block;
+    document.getElementByClass("artwork").style.display = none;
 }

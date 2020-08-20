@@ -1,66 +1,136 @@
+<!-- todo for later: make images and css grid more responsive, clean up the padding stuff, organize css, delete any unnecessary stuff, top dynamic progress bar, rounded corners img, add social media icons at bottom?, transition the text on grid item fadeout, add all links and stuff, fix the grid item buttons -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Lisa Ha's Portfolio</title>
-    <link rel = "stylesheet" href = "mywebstyle.css">
+    <link rel = "stylesheet" href = "style.css">
     <script src="script.js"></script>
   </head>
 
-<body>
-
-  <div class = "navbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="https://docs.google.com/document/d/1XkigNvoVaV529VJX7JH8e68iXAHFGlR5VutCwoam8HY/edit?usp=sharing" target="_blank">Resume</a>
-    <a href="projects.html">Projects</a>
-  </div>
-
-  <header><div class="centered"><span id ="lisa"><h1>LISA HA</h1></span></div></header>
-
-  <!-- <div class="roboto-font"> -->
-  <div class = "blue">
-    <h2>about me</h2>
-    <p>I am a high school senior and International Baccalaureate diploma candidate at Kent-Meridian with a strong interest in <strong>computer science</strong> and <strong>art/design.   </strong> During the past summer, I was a student in the <strong>Girls Who Code</strong> Summer Immersion Program at F5 Networks. I learned how to code and gained more knowledge of how the technology industry works. After I graduate high school, I intend on earning a bachelor's of science degree in Computer Science. Currently, I am searching for technology enrichment programs and internships for <em>summer 2020.</em></p>
-    <p>In my free time, I enjoy doodling, making games, creating art and comics and reading young adult novels. My current obsession is organizing and applying to scholarships. Check out the website I created for college preparation <a href="https://ha-lisa.github.io/northbound/index.html" target="_blank">here.</a></p>
-    <br>
-  </div>
-
-  <div class = "header4"></div>
-
-  <div class = "pink">
-    <h2>my art</h2>
-      <p>I've loved art since I was little, and it still remains an important part of my life. I enjoy creating colorful and fun portraits. You can find my digital art (along with some traditional) on my <a href="https://instagram.com/artofha">Instagram</a> page, <a href="https://www.redbubble.com/people/artofha">Red Bubble</a>, and <a href="artportfolio.html">art portfolio</a>. I hope to expand my art skills into learning design, too!</p>
-
-      <br>
-  </div>
-
-  <div class="header5"></div>
-
-  <div class = "purple">
-    <h2>my projects</h2>
-    <!-- <p><strong>Cloudy Days</strong> - A cat game to help raise awareness of mental health for young children.</p>
-    <p><strong>Northbound</strong> - A college preparation website to help high school students find opportunities.</p> -->
-    <p>Check out my projects<a class="active" href="projects.html"> here</a>!
-  </div>
-
-  <div class="header6"></div>
-
-  <footer>
-    <p>If you have any questions, feel free to contact me at LH.HaLisa@gmail.com.</p>
-      <div class="socials">
-        <a href="https://instagram.com/artofha" target="_blank">
-          <img src="pics/instagramlogo.png"
-          id = "instagram" alt="Instagram logo"></a>
-        <a href="https://www.redbubble.com/people/artofha" target="_blank">
-          <img src="pics/rblogo.png"
-          id = "rb" alt="Red Bubble logo"></a>
-        <a href="https://www.pinterest.com/artofha/" target="_blank">
-          <img src="pics/pinterestlogo.png"
-          id = "pinterest" alt="Pinterest logo"></a>
+  <body>
+    <img src="pics/website-background.png" id="website-background">
+    <nav id="navbar" class="overlay-menu">
+      <a href="javascript:void(0)" class="close-button" onclick="closeNavBar()" style="color:black;"><strong>&times;</strong></a>
+      <div class="overlay-items">
+        <a href="Lisa Ha Resume.pdf" target="_blank">resume</a>
+        <a href="https://github.com/halisa" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/lisa-ha-53a332177/" target="_blank">linkedin</a>
+        <a href="https://halisa.itch.io/" target="_blank">itch.io</a>
+        <a href="https://www.instagram.com/artofha/" target="_blank">instagram</a>
+        <a href="https://www.pinterest.com/artofha/" target="_blank">pinterest</a>
       </div>
-    <p>Created by Lisa Ha © 2020</p>
-  </footer>
+    </nav>
 
-</body>
+    <div id="menu-icon" onclick="openNavBar()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
 
+    <br>
+
+    <a href="index.html"><h1 id="lisa-ha">Lisa Ha</h1></a>
+
+    <img src="pics/avatar.png" alt="a girl with long, straight hair, glasses and pink eyeliner" style="width:300px;">
+
+    <section id = "about-me">
+      <h2>about me ~ <mark>art + cs</mark></h2>
+      <p>I am an incoming first-year undergraduate student at <strong>Pacific Lutheran University</strong> with an intended major in <strong>Computer Science.</strong> I aim to become a software engineer in hopes of empowering students from underrepresented and underserved communities to explore STEAM and college access opportunities.</p>
+
+      <p>I recently graduated in the top 5% in the class of 2020 at Kent-Meridian High School and as an International Baccalaureate diploma recipient. This summer, I participated in the <strong>Google</strong> Computer Science Summer Institute program. Last summer, I was a student in the <strong>Girls Who Code</strong> Summer Immersion Program at <strong>F5 Networks.</strong> Currently, I am searching for technology enrichment programs and internships for <em>summer 2021.</em></p>
+
+      <p>In my free time, I enjoy doodling, making games, creating art and comics and reading young adult novels. My current random hobby is learning piano on a phone app.</p>
+      <br>
+    </section>
+
+    <section id = "my-projects">
+      <h2 style="text-align: center;">my projects</h2>
+      <div id="projects-navigation" style="padding-bottom: 20px; text-align: center;">
+        <!-- <input type="radio" id="All" name="categories" value="All" checked>
+        <input type="radio" id="Art" name="categories" value="Art">
+        <input type="radio" id="Game" name="categories" value="Game">
+        <input type="radio" id="Website" name="categories" value="Website"> -->
+        <!-- <label for="All">all</label>
+        <label for="Art">artworks</label>
+        <label for="Game">games</label>
+        <label for="Website">websites</label> -->
+      </div>
+      <div class="grid-container">
+        <div class="grid-item game">
+          <img src="pics/lets-begin.png" alt="a game start menu featuring a dark-haired girl, the title 'let's begin is centered">
+            <div class="text">
+              <h3>let's begin</h3>
+              <p>in progress // a story game about coming out</p>
+              <button>python</button>
+              <button>pygame</button>
+              <button>krita</button>
+            </div>
+          </div>
+        <div class="grid-item game">
+          <img src="pics/cloudy-days.png" alt="the main character's bedroom, there are posters hanging up above the bed on the left and the door is on the right" onclick ="openCloudyDays()">
+            <div class="text">
+              <h3>cloudy days</h3>
+              <p>gwc final project // a cat game about being a friend</p>
+              <button>python</button>
+              <button>pygame</button>
+              <button>medibang paint</button>
+            </div>
+        </div>
+        <div class="grid-item artwork">
+          <img src="pics/lantern-girl.png" alt="a long-haired and dark-haired girl with bangs wearing a sparkly, purple shirt" onclick="openLanternGirl()">
+          <div class="text">
+            <h3>lantern girl</h3>
+            <p>a digital illustration of a purple-eyed girl</p>
+            <button>krita</button>
+          </div>
+        </div>
+        <div class="grid-item game">
+          <img src="pics/little-red-riding-square.png">
+          <div class="text">
+            <h3>little red riding square</h3>
+            <p>a platformer game through the woods</p>
+            <button>scratch</button>
+          </div>
+        </div>
+        <div class="grid-item website">
+          <img src="pics/personal-website-icon.png" alt="a girl with long, straight hair, glasses and pink eyeliner" onclick="openPortfolioWebsite()">
+          <div class="text">
+            <h3>portfolio website</h3>
+            <p>a personal website to display coding and artistic projects</p>
+            <button>html</button>
+            <button>css</button>
+            <button>javascript</button>
+            <button>krita</button>
+          </div>
+        </div>
+        <!-- <div class="grid-item website">
+          <img src="pics/painting.png" alt="a girl with long, straight hair laying down next to a river and looking into her reflection" onclick="openPortfolioWebsite()">
+          <div class="text">
+            <h3>ib visual arts exhibition</h3>
+            <p>a series of 9 artworks with the theme of storytelling and multiculturism</p>
+            <button>html</button>
+            <button>css</button>
+            <button>javascript</button>
+          </div>
+        </div> -->
+        <div class="grid-item game">
+          <img src="pics/isospace.png" alt="an intricate, yellow and 3-D platform with a small dinosaur sitting on it">
+          <div class="text">
+            <h3>iso-space</h3>
+            <p>google cssi final project // game inspired by monument valley</p>
+            <button>p5.js</button>
+            <button>javascript</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- scratch games, glitch cssi stuff, northbound, art portfolio, pretty hangman game?-->
+    <!--<p><strong>Northbound</strong> - A college preparation website to help high school students find opportunities.</p> -->
+
+    <footer>
+      <p>Created by Lisa Ha © 2020-21</p>
+    </footer>
+  </body>
 </html>
