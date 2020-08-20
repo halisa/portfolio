@@ -21,14 +21,14 @@ function openPortfolioWebsite() {
 // function showAllProjects() {
 //   document.getElementByClass("game").style.width = "50%";
 // }
-
-function showArtProjects() {
-  // document.getElementByClass("artwork").style.display = block;
-  document.getElementByClass("game").style.display = none;
-  alert("Hi");
-}
-
-function showGameProjects() {
-  document.getElementByClass("game").style.display = block;
-    document.getElementByClass("artwork").style.display = none;
-}
+//
+// function showArtProjects() {
+//   document.getElementByClass("artwork").style.display = block;
+//   document.getElementByClass("game").style.display = none;
+//   alert("Hi");
+// }
+//
+// function showGameProjects() {
+//   document.getElementByClass("game").style.display = block;
+//     document.getElementByClass("artwork").style.display = none;
+// }
