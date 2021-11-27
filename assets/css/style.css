@@ -163,6 +163,7 @@ a {
   visibility: hidden;
   margin-top: 20px;
   transition: .3s all ease;
+  padding: 3rem;
 }
 
 .item .item-wrap > .work-info h3 {
