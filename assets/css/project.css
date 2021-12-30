@@ -9,34 +9,8 @@
 # General
 --------------------------------------------------------------*/
 
-
-@font-face {
-  font-family: sookie;
-  src: url("assets/fonts/Sookie.ttf");
-}
-
-@font-face {
-  font-family: shorelines;
-  src: url("assets/fonts/Shorelines.otf") format("opentype");
-}
-
-@font-face {
-  font-family: coffee;
-  src: url("assets/fonts/CoffeeMorning-Bld.woff") format("woff");
-}
-
-@font-face {
-  font-family: celesta;
-  src: url("assets/fonts/Celesta-Medium.ttf") format("opentype");
-}
-
-@font-face {
-  font-family: lisa;
-  src: url("assets/fonts/Lisa_handwriting.ttf") format("truetype");
-}
-
 body {
-  font-family: celesta, sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #495057;
   background-color: white;
   font-size: 1rem;
@@ -45,7 +19,16 @@ body {
 a {
   color: #faa307;
   text-decoration: none;
-  display: block;
+}
+
+#project-link {
+  color: #907ad6;
+  font-weight: bold;
+}
+
+#project-link:hover {
+  color: #EFA00B;
+  transition: color 0.5s;
 }
 
 a:hover {
@@ -54,6 +37,9 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: Quicksand, sans-serif;
+}
+h3 .fontheading {
+
 }
 
 h1 {
@@ -65,8 +51,9 @@ h2 {
   color: #faa307;
 }
 
-h3 {
+h2, h3 {
   font-size: 120%;
+  font-weight: bold;
 }
 
 #first-section {
@@ -76,6 +63,11 @@ h3 {
 a {
   text-decoration: none;
 }
+
+#contact-info {
+  color: #907ad6;
+}
+
 
 .filters a {
   text-decoration: none;
@@ -403,6 +395,8 @@ a {
 .nav ul {
   display: inline-block;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -579,6 +573,9 @@ a {
 --------------------------------------------------------------*/
 .footer {
   padding: 0 0 4rem 0;
+  font-family: 'Rubik', sans-serif;
+  color: #495057;
+  font-size: 1rem;
 }
 
 .footer a {
