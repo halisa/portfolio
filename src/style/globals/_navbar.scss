@@ -2,7 +2,8 @@
 
 .logo {
     display: flex;
-    justify-content: center;
+    width: 70%;
+    // justify-content: center;
     // margin-left:10%;
 }
 
@@ -10,42 +11,63 @@ svg {
     display: flex;
 }
 
-.navbar {
+// .navbar {
+//     border-width: 0px 0px 2px 0px;
+//     border-style: solid;
+// }
+
+.navbar-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
+    margin: 1.5%;
+    
 }
 
 .nav-elements {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
-    float: right;
+    margin: 0vw 0vw 0vw 25vw;
 }
 
 .nav-element {
     display: flex;
-    justify-content: center;
-    float: right;
+    justify-content: right;
+    align-items: center;
 }
 
-.nav-element button {
-    width:40%;
-    height: 100%;
-    min-width: fit-content;
-    // border-radius: 15%;
-    background-color: colors.$invisible;
-    border-width: 0px;
-    cursor: pointer;
+.nav-text {
+    font-family: Fredoka;
+    font-weight: 600;
+    color:colors.$dark_gray;
 }
 
-.nav-element button::after {
+.nav-text:hover {
     color: colors.$light_pink;
 }
 
-.nav-element button::selection {
+.nav-text.selected {
     color: colors.$pink;
 }
+
+// .nav-element button {
+//     width:40%;
+//     height: 100%;
+//     min-width: fit-content;
+//     // border-radius: 15%;
+//     background-color: colors.$invisible;
+//     border-width: 0px;
+//     cursor: pointer;
+// }
+
+// .nav-element button::after {
+//     color: colors.$light_pink;
+// }
+
+// .nav-element button::selection {
+//     color: colors.$pink;
+// }
 
 Link {
     display: flex;
