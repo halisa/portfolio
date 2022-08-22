@@ -1,0 +1,30 @@
+@use "colors";
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.nav-elements {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    float: right;
+}
+
+.nav-element {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-element button {
+    width:40%;
+    min-width: fit-content;
+    // height: 60%;
+    border-radius: 15%;
+}
+
+.nav-element button::selection {
+    color: colors.$pink;
+}

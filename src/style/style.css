@@ -4,12 +4,52 @@ h1 {
   font-weight: 400;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, button {
   font-family: Fredoka;
+  font-weight: 600;
+  font-size: medium;
 }
 
 p {
   font-family: Rubik;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.nav-elements {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  float: right;
+}
+
+.nav-element {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-element button {
+  width: 40%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-radius: 15%;
+}
+
+.nav-element button::-moz-selection {
+  color: #FF588B;
+}
+
+.nav-element button::selection {
+  color: #FF588B;
 }
 
 welcome-container {

@@ -1,7 +1,11 @@
+import Navbar from '../components/Navbar';
+import '../style/style.css';
+
 const HomePage = () => {
     return(
         <div>
-            <h1>Lisa Ha</h1>
+            <Navbar />
+            <h1>Welcome</h1>
         </div>
     )
 }
