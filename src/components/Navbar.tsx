@@ -1,25 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/Logo";
+declare module "*.svg"
 
 const Navbar = () => {
     return(
         <div className="navbar">
             <div className="logo">
-                <h1>
-                    <a href="./">Lisa Ha</a>
-                </h1>
+                    <Link to="/"><Logo /></Link>
+
             </div>
             <div className="nav-elements">
                 <div className="nav-element about">
-                    <button>about</button>
+                    <Link to="/about">
+                        <button>
+                            about
+                            </button>
+                    </Link>
                 </div>
                 <div className="nav-element portfolio">
-                    <button>portfolio</button>
+                <Link to="/"><button>portfolio</button></Link>
                 </div>
                 <div className="nav-element resume">
-                    <button>resume</button>
+                    <Link to="/"><button>resume</button></Link>
                 </div>
             </div>
+            <div className="social-elements"></div>
         </div>
     )
 }

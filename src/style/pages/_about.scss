@@ -1,0 +1,19 @@
+img {
+    width:90%;
+    // height:25%;
+}
+
+.about-container {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.about-img {
+    max-width: fit-content;
+}
+
+.about-text {
+    padding-right: 10%;
+}

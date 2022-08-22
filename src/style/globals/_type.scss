@@ -8,11 +8,23 @@ h1 {
 h2, h3, h4, h5, h6, button {
     font-family: Fredoka;
     font-weight: 600;
+}
+
+h2 {
+    font-size: 150%;
+} 
+
+h3, h4, h5, h6 {
+    font-size: 120%;
+}
+
+button {
     font-size: medium;
 }
 
 p {
     font-family: Rubik;
+    font-size: small;
 }
 
 a {
