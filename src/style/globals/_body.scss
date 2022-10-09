@@ -1,6 +1,12 @@
 @use "colors";
 
-// body {
+body {
+    margin:0;
+    border: 5px solid colors.$pink;
+    // border-width: 4px;
+    // border-color: colors.$pink;
+    // outline: 5px;
+    // color: colors.$pink;
     // margin: 2%;
     // background-image: linear-gradient(colors.$pink, colors.$orange);
-// }
+}
