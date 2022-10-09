@@ -17,12 +17,13 @@ const Navbar = () => {
                             <div className="nav-text">about</div>
                         </Link>
                     </div>
-                    <div className="nav-element portfolio">
-                    <Link to="/"><div className="nav-text">portfolio</div></Link>
-                    </div>
                     <div className="nav-element resume">
                         <Link to="/"><div className="nav-text">resume</div></Link>
                     </div>
+                    <div className="nav-element portfolio">
+                    <Link to="/"><div className="nav-text">portfolio</div></Link>
+                    </div>
+                    
                 </div>
             </div>
             

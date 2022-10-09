@@ -9,6 +9,7 @@
 
 svg {
     display: flex;
+    color: colors.$pink;
 }
 
 // .navbar {
@@ -20,7 +21,7 @@ svg {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    margin: 1.5%;
+    // margin: 1.5%;
     
 }
 
@@ -29,22 +30,29 @@ svg {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     margin: 0vw 0vw 0vw 25vw;
+    column-gap: 10px;
 }
 
 .nav-element {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    background-color: colors.$pink;
+    border-radius: 50px;
+    height: 75%;
 }
 
 .nav-text {
     font-family: Fredoka;
-    font-weight: 600;
-    color:colors.$dark_gray;
+    font-weight: 500;
+    color:colors.$white;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 10px 0px 10px 0px;
 }
 
-.nav-text:hover {
-    color: colors.$light_pink;
+.nav-element:hover {
+    background-color: colors.$light_pink;
 }
 
 .nav-text.selected {
