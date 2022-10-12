@@ -27,7 +27,7 @@ button {
 
 p {
   font-family: Rubik;
-  font-size: small;
+  font-size: medium;
 }
 
 a {
@@ -209,7 +209,7 @@ body {
 }
 
 .about-container img {
-  max-width: 400px;
+  max-width: 640px;
   width: 150%;
   height: 150%;
   flex: 50%;
@@ -229,7 +229,7 @@ body {
 .about-container {
   margin: 0 0.75% 0 0.75%;
   display: flex;
-  gap: 48px;
+  gap: 20px;
   flex-direction: row;
 }
 
