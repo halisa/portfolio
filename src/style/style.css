@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap");
+* {
+  color: #363636;
+}
+
 h1 {
   font-family: Shrikhand;
   font-weight: 400;
@@ -37,13 +41,14 @@ a {
 
 svg {
   display: flex;
+  color: #E90063;
 }
 
 .navbar-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  margin: 1.5%;
+  margin: 0.75% 0.75% 0 0.75%;
 }
 
 .nav-elements {
@@ -51,26 +56,35 @@ svg {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   margin: 0vw 0vw 0vw 25vw;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .nav-element {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  background-color: #E90063;
+  border-radius: 50px;
+  height: 75%;
 }
 
 .nav-text {
   font-family: Fredoka;
-  font-weight: 600;
-  color: #363636;
+  font-weight: 500;
+  color: #FFFFFF;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  padding: 10px 0px 10px 0px;
 }
 
-.nav-text:hover {
-  color: rgb(255, 88, 139);
+.nav-element:hover {
+  background-color: #FFD2A7;
+  transition: 0.25s;
 }
 
 .nav-text.selected {
-  color: #FF588B;
+  color: #E90063;
 }
 
 Link {
@@ -79,42 +93,144 @@ Link {
   align-items: center;
 }
 
-.footer-container {
-  border-style: solid;
-  border-width: 2px 0px 0px 0px;
-  color: lightgray;
-  margin-bottom: 3%;
+body {
+  margin: 0;
 }
 
-.footer-text {
-  padding: 6vh 6vh 0vh 6vh;
+.footer-container {
+  margin: 0;
+  margin-top: 0.75%;
+  position: fixed;
+  width: -webkit-fill-available;
+  left: 0;
+  bottom: 0;
+  color: #E90063;
+  background-color: #FFD2A7;
   text-align: center;
-  color: #363636;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  padding: 0 0.75% 0 0.75%;
 }
 
 .social-icons {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  justify-content: center;
-  color: #363636;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  justify-content: left;
+  fill: #E90063;
+  align-items: center;
 }
 
-home-container {
+.footer-text {
+  font-family: Fredoka;
+  font-weight: 500;
+  padding: 0;
   text-align: center;
-  margin: 2% 15% 4% 15%;
+  color: #E90063;
+  font-size: medium;
 }
 
-img {
-  width: 85%;
-  border-radius: 10px;
+.footer-archive {
+  font-family: Fredoka;
+  font-weight: 600;
+  color: #E90063;
+  padding: 0;
+  text-align: right;
+  font-size: medium;
 }
 
-.about-container {
-  margin: 2% 15% 4% 15%;
+.loading-container img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.home-container {
+  height: -webkit-fill-available;
+  margin: 0 0.75% 0.75% 0.75%;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.home-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 82vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #FFFFFF;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-container h2 {
+  font-family: Rubik;
+  font-weight: 600;
+  font-style: italic;
+  font-size: xx-large;
+  position: block;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.about-container img {
+  max-width: 400px;
+  width: 150%;
+  height: 150%;
+  flex: 50%;
+}
+
+@media (max-width: 650px) {
+  .about-container img {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+  }
+  .about-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+.about-container {
+  margin: 0 0.75% 0 0.75%;
+  display: flex;
+  gap: 48px;
+  flex-direction: row;
 }
 
 .about-img {
@@ -125,7 +241,7 @@ img {
 }
 
 .about-text {
-  padding-right: 10%;
+  flex: 50%;
 }
 
 .about-container h2, h3 {

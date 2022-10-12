@@ -21,8 +21,21 @@ svg {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    margin: 0.75%;
+    margin: 0.75% 0.75% 0 0.75%;
+    // position: fixed;
+    // top:0;
+    // left:0;
+
 }
+
+// .navbar {
+//     overflow: hidden;
+//     background-color: colors.$white;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index: 999;
+// }
 
 .nav-elements {
     display: grid;
@@ -51,7 +64,8 @@ svg {
 }
 
 .nav-element:hover {
-    background-color: colors.$light_pink;
+    background-color: colors.$light_orange;
+    transition: 0.25s;
 }
 
 .nav-text.selected {
