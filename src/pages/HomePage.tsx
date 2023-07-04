@@ -14,6 +14,7 @@ import apm from "../assets/home-page-thumbnails/apm-thumbnail.png";
 import covid from "../assets/home-page-thumbnails/covid-thumbnail.png";
 import sax from "../assets/home-page-thumbnails/sax-thumbnail.png";
 import plubday from "../assets/home-page-thumbnails/plubday-thumbnail.png";
+import apiproud from "../assets/home-page-thumbnails/apiproud-thumbnail.png";
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -111,6 +112,13 @@ const HomePage = () => {
                 <div className="img-container">
                     <Link to="/slow">
                         <img src={plubday} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={apiproud} alt="" className='thumbnail'/>
                         <div className="overlay"><h2>displaced</h2></div>
                     </Link>
                 </div>
