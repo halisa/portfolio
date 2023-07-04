@@ -34,6 +34,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #0CA476;
 }
 
 .logo {
@@ -150,7 +151,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  padding: 0 0.75% 0 0.75%;
+  padding: 0.75%;
 }
 
 .social-icons {
@@ -278,7 +279,7 @@ body {
   }
 }
 .about-container {
-  margin: 0 0.75% 0 0.75%;
+  margin: 0% 10% 0% 10%;
   display: flex;
   gap: 20px;
   flex-direction: row;
@@ -295,5 +296,5 @@ body {
 }
 
 .about-container h2, h3 {
-  color: #FF9C42;
+  color: #E90063;
 }/*# sourceMappingURL=style.css.map */

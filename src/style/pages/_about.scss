@@ -22,7 +22,7 @@
 
 .about-container {
     // margin: 2% 13% 4% 13%;
-    margin: 0 0.75% 0 0.75%;
+    margin: 0% 10% 0% 10%;
     display: flex;
     gap: 20px;
     // max-width: 50%;
@@ -43,5 +43,5 @@
 }
 
 .about-container h2, h3 {
-    color: colors.$orange;
+    color: colors.$pink;
 }
