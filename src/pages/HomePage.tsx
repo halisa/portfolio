@@ -1,11 +1,19 @@
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import '../style/style.css';
-import slow from "../assets/slow-thumbnail.jpg";
-import omg from "../assets/omg-thumbnail.jpg";
-import xmas from "../assets/xmas-thumbnail.jpg";
-import tmf from "../assets/tmf-thumbnail.jpg";
-import displaced from "../assets/displaced-thumbnail.jpg";
+import slow from "../assets/home-page-thumbnails/slow-thumbnail.jpg";
+import omg from "../assets/home-page-thumbnails/omg-thumbnail.jpg";
+import xmas from "../assets/home-page-thumbnails/xmas-thumbnail.jpg";
+import tmf from "../assets/home-page-thumbnails/tmf-thumbnail.jpg";
+import displaced from "../assets/home-page-thumbnails/displaced-thumbnail.jpg";
+import winterfest from "../assets/home-page-thumbnails/winterfest-thumbnail.png";
+import bicultural from "../assets/home-page-thumbnails/bicultural-thumbnail.png";
+import arrow from "../assets/home-page-thumbnails/arrow-thumbnail.png";
+import collage from "../assets/home-page-thumbnails/collage-thumbnail.png";
+import apm from "../assets/home-page-thumbnails/apm-thumbnail.png";
+import covid from "../assets/home-page-thumbnails/covid-thumbnail.png";
+import sax from "../assets/home-page-thumbnails/sax-thumbnail.png";
+import plubday from "../assets/home-page-thumbnails/plubday-thumbnail.png";
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -50,6 +58,59 @@ const HomePage = () => {
                 <div className="img-container">
                     <Link to="/slow">
                         <img src={displaced} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={winterfest} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={bicultural} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+
+
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={arrow} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={collage} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={apm} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+
+
+
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={covid} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={sax} alt="" className='thumbnail'/>
+                        <div className="overlay"><h2>displaced</h2></div>
+                    </Link>
+                </div>
+                <div className="img-container">
+                    <Link to="/slow">
+                        <img src={plubday} alt="" className='thumbnail'/>
                         <div className="overlay"><h2>displaced</h2></div>
                     </Link>
                 </div>
