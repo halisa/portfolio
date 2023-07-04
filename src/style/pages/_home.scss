@@ -24,17 +24,17 @@
 
 .home-container {
     height: -webkit-fill-available;
-    margin: 0 0.75% 0.75% 0.75%;
+    margin: 0 10% 0% 10%;
     // margin-top: 0;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     // grid-template-rows: auto auto;
 }
 
 .home-container img {
     object-fit: cover;
     object-position: center;
-    height: 82vh;
+    // height: 82vh;
     // width: 200px;
 }
 
@@ -89,4 +89,16 @@
     // top: 0;
     // bottom: 0;
     // margin: auto;
+  }
+
+  .hello-text {
+    text-align: center;
+    padding: 1.5em;
+  }
+  .hello-text h1 {
+    color: colors.$pink;
+  }
+
+  .hello-text h1, h2 {
+    margin: 0.4em;
   }

@@ -12,6 +12,10 @@ const HomePage = () => {
     return(
         <div className='home'>
             <Navbar />
+            <div className="hello-text">
+                    <h1>✨ hello, i'm lisa ha ✨</h1>
+                    <h2>designer + illustrator</h2>
+            </div>
             <div className="home-container">
                 <div className="img-container">
                     <Link to="/slow" className="link-container">
