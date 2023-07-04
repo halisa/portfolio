@@ -3,13 +3,9 @@
 .footer-container {
     margin: 0;
     margin-top:0.75%;
-    // border: 5px solid colors.$pink;
-    position: fixed;
     width:-webkit-fill-available;
     left: 0;
     bottom: 0;
-    color: colors.$pink;
-    background-color: colors.$light_orange;
     text-align: center;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -28,7 +24,7 @@
 }
 
 .footer-text {
-    font-family: Fredoka;
+    font-family: Rubik;
     font-weight:500;
     padding: 0;
     text-align: center;
@@ -37,11 +33,9 @@
 }
 
 .footer-archive {
-    font-family: Fredoka;
+    font-family: Rubik;
     font-weight:600;
-    color: colors.$pink;
     padding: 0;
-    // margin-right:0.75%;
     text-align: right;
     font-size: medium;
 }
