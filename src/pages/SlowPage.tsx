@@ -1,23 +1,38 @@
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Button from '../components/Button';
 import '../style/style.css';
-import slow from "../assets/slow-thumbnail.png"
+import slow from "../assets/work-pages/slow-page/slow-thumbnail.png"
 
 const SlowPage = () => {
     return(
         <div className='work'>
             <Navbar />
             <div className="work-container">
-                <h2>Slow Book</h2>
-                <h3>Sep 2021 - Dec 2021</h3>
-                <div className="tags">
-                    <ul>
-                        <li>book design</li>
-                        <li>illustration</li>
-                        <li>research</li>
-                    </ul>
+                <div className="hello-text">
+                        <h1>slow book 🐌</h1>
+                        <h2>independent study on decolonizing design</h2>
                 </div>
-                <img src="" alt="" />
+                <Button></Button>
+                <div className="tags">
+                    <div className="tag-element">
+                        <h3>skills</h3>
+                        <p>book design</p>
+                        <p>illustration</p>
+                        <p>research</p>
+                    </div>
+                    <div className="tag-element">
+                        <h3>tools</h3>
+                        <p>indesign</p>
+                     
+                    </div>
+                    
+                    <div className="tag-element">
+                        <h3>time</h3>
+                        <p>Sep 2021 - Dec 2021</p>
+                    </div>
+                </div>
+                <img src={slow} alt="" />
                 <p>So far at my time at PLU, as well as growing up with the American education system, I’ve realized that education is through a mainly white male and colonial gaze, where the winners get to tell history. I’m tired of people and groups who do not fit into that identity and worldview being degraded to “alternative” perspectives or becoming an afterthought in the footnotes. This independent study will be both educational and academically enriching to my areas of study of Computer Science and Gender, Sexuality and Race Studies as it bridges the two and adds more layers of history and context. </p>
 
                 <p>My personal goal with creating an independent study course on Decolonizing Design is to see more of myself and of friends and family in the strength, brilliance, and resilience of designers that don’t get as heard or represented. As a queer woman of color, this would be very empowering as well as healing to have agency in who’s stories I get to learn, and continue on learning how to unlearn problematic ideas and ways of viewing/thinking.</p>
@@ -32,7 +47,6 @@ const SlowPage = () => {
 
                 <p>I believe the independent study was successful because I started my learning journey of decolonizing design and I think this was a good starting point to learning more in the future whether on my own or through other classes/activities. I came out with a book at the end that shows my learning process and I am proud of that.</p>
 
-                <button>Read Slow</button>
                 {/* https://issuu.com/ha_lisa/docs/slow  */}
             </div>
             

@@ -34,7 +34,6 @@ p {
 
 a {
   text-decoration: none;
-  color: #0CA476;
 }
 
 .logo {
@@ -133,8 +132,8 @@ Link {
 }
 
 .logo-nav {
-  width: 10vw;
-  height: 8vw;
+  width: 7vw;
+  height: 5vw;
 }
 
 body {
@@ -189,6 +188,16 @@ body {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+button {
+  margin: auto;
+  display: block;
+  background-color: #0CA476;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
 }
 
 .home-container {
@@ -297,4 +306,33 @@ body {
 
 .about-container h2, h3 {
   color: #E90063;
+}
+
+.work-container {
+  margin: 0 10% 0% 10%;
+}
+
+.work-container img {
+  display: block;
+  margin: auto;
+}
+
+.work-container p {
+  padding: 0 5vw 0 5vw;
+}
+
+.tags {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: auto;
+  display: grid;
+  padding: 1.5em 0 1.5em 0;
+}
+
+.tag-element {
+  justify-content: center;
+  text-align: center;
+}
+
+.tag-element p {
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */

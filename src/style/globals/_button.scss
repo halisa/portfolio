@@ -1,0 +1,11 @@
+@use "colors";
+
+button {
+    margin: auto;
+    display: block;
+    background-color: colors.$green;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: colors.$white;
+}
