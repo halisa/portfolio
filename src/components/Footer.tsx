@@ -31,7 +31,7 @@ const Footer = () => {
                     </IconContext.Provider>
                 </a>
             </div>
-            <p className="footer-text">made with ♥ by lisa ha 2022</p>
+            <p className="footer-text">made with ♥ by lisa ha 2023</p>
             <p className="footer-archive">archive</p>
         </div>
     
