@@ -586,6 +586,7 @@ a {
   text-align: center;
   /* color: #0d1e2d; */
   color: black;
+  transition: 0.3s;
 }
 
 .social a span {
