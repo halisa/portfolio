@@ -626,3 +626,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+button {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
