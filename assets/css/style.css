@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
   color: #2573cf;
   text-align: center;
   margin: auto;
