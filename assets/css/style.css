@@ -15,7 +15,7 @@ body {
 } */
 
 h1 {
-    font-family: Omari, 'Times New Roman', Times, serif;
+    font-family: Shrikhand, 'Times New Roman', Times, serif;
     font-size:xx-large;
 }
 
@@ -177,19 +177,46 @@ a {
   }
 
   /* DESIGN HOMEPAGE */
+
+  * {
+    box-sizing: border-box;
+  }
+
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+}
+
+
+
   .flex-wrap-container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 300px 0 300px;
     /* align-items: stretch; */
     }
    
-.flex-wrap-container > div {
-    /* background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px; */
-    /* flex-grow: 1; */
+.column > div {
+    padding: 5px;
   }
 
+  @media (max-width: 1400px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .flex-wrap-container {
+        margin: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .flex-wrap-container {
+        margin: 0;
+    }
+  }
