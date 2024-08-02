@@ -19,6 +19,10 @@ h1 {
     font-size: xx-large;
 }
 
+h3 {
+    font-family: Rubik, sans-serif;
+}
+
 ul {
     font-family: Rubik, sans-serif;
     list-style-type: none;
@@ -28,6 +32,7 @@ ul {
 
 p {
     font-size: larger;
+    font-family: Rubik, sans-serif;
 }
 
 a {
@@ -35,6 +40,15 @@ a {
     color: #1e1cac;
     
     /* display: block; */
+}
+
+.hr {
+    border-bottom: 4px solid #ff9eff;
+    width: 100%;
+}
+.hr-padding {
+    width: 100%;
+    padding: 15px;
 }
 
 .navbar a, .footer a {
@@ -60,6 +74,10 @@ a.email:hover {
 }
 .navbar a:hover, .footer a:hover {
     background-color: #ff9eff ;
+}
+
+.heading a:hover {
+    background-color: #ffe8ff;
 }
 
 /* NAVBAR-TOP */
@@ -167,12 +185,12 @@ a.email:hover {
     max-width: 50%;
 }
 
-.columns-2 > div {
-    padding: 25px;
+.columns-2 > img {
+    padding: 5px;
 }
 
-.lisa-img img {
-    width: 50vw;
+.lisa-img, .about-info {
+    padding: 15px;
 }
 
 .about-info p {
@@ -191,6 +209,10 @@ a.email:hover {
 
     .flex-wrap-container {
         margin: 0;
+    }
+
+    .lisa-img, .about-info {
+        padding-bottom: 0px;
     }
   }
 
@@ -217,6 +239,10 @@ a.email:hover {
     }
    
 .column > div {
+    padding: 5px;
+  }
+
+  .column > img {
     padding: 5px;
   }
 
