@@ -32,23 +32,23 @@
   <div class="content">
     <div class="flex-wrap-container">
         <div class="column">
-            <div><img src="assets/img/illustration/hope.JPG" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/displaced.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/flora.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/mantaray pjs.jpg" alt="" style="width:100%"></div>
+            <div><img src="assets/img/illustration/hope.JPG" alt="" style="width:100%" onclick="openModal();currentSlide(1)" class="gallery"></div>
+            <div><img src="assets/img/illustration/displaced.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(2)" class="gallery"></div>
+            <div><img src="assets/img/illustration/flora.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(3)" class="gallery"></div>
+            <div><img src="assets/img/illustration/mantaray pjs.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(4)" class="gallery"></div>
         </div>
         <div class="column">
-            <div><img src="assets/img/illustration/ravenbb.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/baseball.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/covid 19 mall.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/purple mermaid.png" alt="" style="width:100%"></div>
+            <div><img src="assets/img/illustration/ravenbb.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(5)" class="gallery"></div>
+            <div><img src="assets/img/illustration/baseball.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(6)" class="gallery"></div>
+            <div><img src="assets/img/illustration/covid 19 mall.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="gallery"></div>
+            <div><img src="assets/img/illustration/purple mermaid.png" alt="" style="width:100%" onclick="openModal();currentSlide(8)" class="gallery"></div>
             
         </div>
         <div class="column">
-            <div><img src="assets/img/illustration/displaced 2.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/cherry 1.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/cloudy whales.jpg" alt="" style="width:100%"></div>
-            <div><img src="assets/img/illustration/streetlamps.jpg" alt="" style="width:100%"></div>
+            <div><img src="assets/img/illustration/displaced 2.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(9)" class="gallery"></div>
+            <div><img src="assets/img/illustration/cherry 1.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(10)" class="gallery"></div>
+            <div><img src="assets/img/illustration/cloudy whales.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(11)" class="gallery"></div>
+            <div><img src="assets/img/illustration/streetlamps.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(12)" class="gallery"></div>
         </div>
     </div>
   </div>
@@ -63,6 +63,105 @@
       <li class="resume"><a href="assets/pdf/Resume_Ha_Lisa.pdf" target="_blank">resume</a></li>
     </ul>
   </footer>
+
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()" style="font-family: Rubik, Helvetica, sans-serif;">x</span>
+    <div class="modal-content">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="mySlides">
+        <img src="assets/img/illustration/hope.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/illustration/displaced.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/illustration/flora.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/mantaray pjs.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/ravenbb.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/baseball.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/covid 19 mall.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/purple mermaid.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/displaced 2.jpg" style="width:100%">
+      </div>  
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/cherry 1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/cloudy whales.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/illustration/streetlamps.jpg" style="width:100%">
+      </div>
+
+      <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+  
   
 </body>
 </html>
