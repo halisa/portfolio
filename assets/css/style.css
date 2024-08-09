@@ -10,16 +10,18 @@ body {
 }
 
 h1 {
-    font-family: Shrikhand, 'Times New Roman', Times, serif;
+    font-family: 'Shrikhand', 'Times New Roman', Times, serif;
+    font-weight: 600; 
+    font-style:normal;
     font-size: xx-large;
 }
 
 h3 {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 ul {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     list-style-type: none;
     padding-left: 0;
     
@@ -27,11 +29,11 @@ ul {
 
 p {
     font-size: larger;
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 a {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #1e1cac;
 }
 
@@ -188,11 +190,11 @@ a.email:hover {
 }
 
 .about-info p {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
  }
 
  h2 {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
  }
 
   @media (max-width: 700px) {
@@ -267,7 +269,7 @@ a.email:hover {
 
     color: #1e1cac;
     font-size: large;
-    font-family: Rubik, sans serif;
+    font-family: 'Rubik', sans serif;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
