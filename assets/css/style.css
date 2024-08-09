@@ -106,7 +106,7 @@ a.email:hover {
 }
 
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .navbar a {
       float: none;
       display: block;
@@ -145,7 +145,6 @@ a.email:hover {
 
 .footer-info {
     font-size: small;
-    /* bottom: 0; */
     float: none;
     position: absolute;
     top: 50%;
@@ -182,6 +181,8 @@ a.email:hover {
     padding: 5px;
 }
 
+
+
 .lisa-img, .about-info {
     padding: 15px;
 }
@@ -194,7 +195,7 @@ a.email:hover {
     font-family: Rubik, sans-serif;
  }
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .columns-2 {
         flex: 100%;
         max-width: 100%;
@@ -228,8 +229,7 @@ a.email:hover {
     display: flex;
     flex-wrap: wrap;
     margin: 0 300px 0 300px;
-    /* align-items: stretch; */
-    }
+  }
    
 .column > div {
     padding: 5px;
@@ -240,17 +240,12 @@ a.email:hover {
   }
 
   @media (max-width: 1400px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-
     .flex-wrap-container {
         margin: 0;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .column {
       flex: 100%;
       max-width: 100%;
@@ -361,6 +356,21 @@ a.email:hover {
     background-color: #ff9eff;
   }
 
+  img.gallery {
+    box-shadow: none;
+    transition: .2s ease;
+  }
+
   img.gallery:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 0px 10px #ff9eff;
   }
+
+.columns-2 > a > img {
+  padding: 5px;
+  transition: .2s ease;
+  box-sizing: none;
+}
+.columns-2 > a > img:hover {
+  box-shadow: 0px 0px 0px 10px #ff9eff;
+}
