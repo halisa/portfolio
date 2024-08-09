@@ -372,5 +372,6 @@ a.email:hover {
   box-sizing: none;
 }
 .columns-2 > a > img:hover {
-  box-shadow: 0px 0px 0px 10px #ff9eff;
+  background-color: #ff9eff;
+  box-shadow: 0px 0px 0px 5px #ff9eff;
 }
