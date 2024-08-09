@@ -382,3 +382,21 @@ a.email:hover {
   background-color: #ff9eff;
   box-shadow: 0px 0px 0px 5px #ff9eff;
 }
+
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe8ff; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1cac; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
