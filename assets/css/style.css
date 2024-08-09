@@ -73,6 +73,21 @@ a.email:hover {
   background-color: #ffe8ff;
 }
 
+/* CURSOR */
+
+html {
+  cursor: url('../cursor/regular.svg'), auto;
+  /* cursor: url('../cursor/pointer.svg'), pointer; */
+}
+
+a:hover {
+  cursor: url('../cursor/pointer-blue.svg'), auto;
+}
+
+a.button:hover {
+  cursor: url('../cursor/pointer-pink.svg'), auto;
+}
+
 /* NAVBAR */
 .navbar {
   position: -webkit-sticky;
@@ -342,8 +357,8 @@ img.gallery {
 }
 
 img.gallery:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 0px 10px #ff9eff;
+  cursor: url('../cursor/pointer-pink.svg'), auto;
 }
 
 .columns-2 > a > img {
@@ -354,6 +369,7 @@ img.gallery:hover {
 .columns-2 > a > img:hover {
   background-color: #ff9eff;
   box-shadow: 0px 0px 0px 5px #ff9eff;
+  cursor: url('../cursor/pointer-pink.svg'), auto;
 }
 
 /* CUSTOM SCROLLBAR */
