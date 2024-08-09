@@ -210,6 +210,11 @@ a.email:hover {
     .lisa-img, .about-info {
         padding-bottom: 0px;
     }
+
+    .slow-columns-2 {
+      flex: 50%;
+      max-width: 50%;
+    }
   }
 
 
