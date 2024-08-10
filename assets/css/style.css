@@ -256,6 +256,12 @@ a.button:hover {
   .flex-wrap-container {
       margin: 0;
   }
+  h1 {
+    font-size: x-large;
+  }
+  .footer-info {
+    font-size: x-small;
+  }
 }
 
 /* BUTTON  */
