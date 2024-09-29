@@ -34,7 +34,7 @@ a {
   font-family: 'Rubik', sans-serif;
   color: #1e1cac;
 }
-
+/* COME BACK TO THIS */
 .hr {
   border-bottom: 4px solid #ff9eff;
   width: 100%;
@@ -44,11 +44,7 @@ a {
   padding: 15px;
 }
 
-.navbar a, .footer a {
-  display: block;
-  text-decoration: none;
-  font-size: x-large;
-}
+/* EMAIL */
 
 a.email {
   color: #1e1cac;
@@ -61,6 +57,28 @@ a.email:hover {
   color: #ff9eff;
 }
 
+
+/* CURSOR */
+
+html {
+  cursor: url('../cursor/regular.svg'), auto;
+}
+
+a:hover {
+  cursor: url('../cursor/pointer-blue.svg'), auto;
+}
+
+a.button:hover {
+  cursor: url('../cursor/pointer-pink.svg'), auto;
+}
+
+/* NAVBAR FOOTER ANIMATION */
+
+.navbar a, .footer a {
+  display: block;
+  text-decoration: none;
+  font-size: x-large;
+}
 .navbar a, .footer a {
   transition-duration: .3s;
   background-color: #ffe8ff;
@@ -73,22 +91,9 @@ a.email:hover {
   background-color: #ffe8ff;
 }
 
-/* CURSOR */
-
-html {
-  cursor: url('../cursor/regular.svg'), auto;
-  /* cursor: url('../cursor/pointer.svg'), pointer; */
-}
-
-a:hover {
-  cursor: url('../cursor/pointer-blue.svg'), auto;
-}
-
-a.button:hover {
-  cursor: url('../cursor/pointer-pink.svg'), auto;
-}
 
 /* NAVBAR */
+
 .navbar {
   position: -webkit-sticky;
   position: fixed;
@@ -108,7 +113,6 @@ a.button:hover {
 }
 
 .heading {
-  float: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,22 +121,6 @@ a.button:hover {
 
 .illustration {
   float: right;
-}
-
-/* MOBILE */
-@media screen and (max-width: 700px) {
-  .navbar a {
-    float: none;
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    font-size: large;
-  }
-  .footer a {
-    font-size: large;
-  }
 }
 
 /* FOOTER */
@@ -172,6 +160,10 @@ a.button:hover {
   margin: 0;
 }
 
+.footer-info a {
+  font-size: small;
+}
+
 /* ABOUT */
 .lisa-img, .about-info {
   padding: 15px;
@@ -200,6 +192,22 @@ a.button:hover {
 
 .columns-2 > img {
   padding: 5px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+  .navbar a {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    font-size: large;
+  }
+  .footer a {
+    font-size: large;
+  }
 }
 
 @media (max-width: 700px) {
@@ -235,7 +243,7 @@ a.button:hover {
 .flex-wrap-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 300px 0 300px;
+  /* margin: 0 300px 0 300px; */
 }
    
 .column > div {
