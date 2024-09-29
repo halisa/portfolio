@@ -176,8 +176,7 @@ a.button:hover {
 /* CONTENT */
 
 .content {
-  margin-bottom: 55px;
-  margin-top: 55px;
+  padding: 50px 22px 50px 22px;
 }
 
 .flex-container {
@@ -377,7 +376,7 @@ img.gallery:hover {
 
 /* MOBILE */
 
-@media (max-width: 1000px){
+@media (max-width: 1300px){
   .column-4 {
     flex: 50%;
     max-width: 50%;
@@ -427,5 +426,8 @@ img.gallery:hover {
   }
   .footer-info, .footer-info a {
     font-size: x-small;
+  }
+  .content {
+    padding: 50px 0 0 0;
   }
 }
