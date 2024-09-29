@@ -185,50 +185,16 @@ a.button:hover {
   flex-direction: row;
 }
 
-.columns-2 {
+
+.column-2 {
   flex: 50%;
   max-width: 50%;
 }
 
-.columns-2 > img {
+.column-2 > img {
   padding: 5px;
 }
 
-/* MOBILE */
-@media screen and (max-width: 700px) {
-  .navbar a {
-    float: none;
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    font-size: large;
-  }
-  .footer a {
-    font-size: large;
-  }
-}
-
-@media (max-width: 700px) {
-  .columns-2 {
-      flex: 100%;
-      max-width: 100%;
-  }
-
-  .flex-wrap-container {
-      margin: 0;
-  }
-
-  .lisa-img, .about-info {
-      padding-bottom: 0px;
-  }
-
-  .slow-columns-2 {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
 /* FLEX WRAP */
 * {
@@ -254,28 +220,6 @@ a.button:hover {
   padding: 5px;
 }
 
-@media (max-width: 1400px) {
-  .flex-wrap-container {
-      margin: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .flex-wrap-container {
-      margin: 0;
-  }
-  h1 {
-    font-size: x-large;
-    margin: 10px;
-  }
-  .footer-info {
-    font-size: x-small;
-  }
-}
 
 /* BUTTON  */
 a.button {
@@ -380,12 +324,34 @@ img.gallery:hover {
   cursor: url('../cursor/pointer-pink.svg'), auto;
 }
 
-.columns-2 > a > img {
+.column-4 {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column-4 > img, .column-4 > img {
+  padding: 5px;
+}
+
+
+.column-4 > div > img,  .column-4 > a > img  {
   padding: 5px;
   transition: .2s ease;
   box-sizing: none;
 }
-.columns-2 > a > img:hover {
+.column-4 > div > img:hover,  .column-4 > a > img:hover  {
+  background-color: #ff9eff;
+  box-shadow: 0px 0px 0px 5px #ff9eff;
+  cursor: url('../cursor/pointer-pink.svg'), auto;
+}
+
+
+.column-2 > a > img {
+  padding: 5px;
+  transition: .2s ease;
+  box-sizing: none;
+}
+.column-2 > a > img:hover {
   background-color: #ff9eff;
   box-shadow: 0px 0px 0px 5px #ff9eff;
   cursor: url('../cursor/pointer-pink.svg'), auto;
@@ -406,4 +372,60 @@ img.gallery:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+
+/* MOBILE */
+
+@media (max-width: 1000px){
+  .column-4 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .column-4 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column-2 {
+      flex: 100%;
+      max-width: 100%;
+  }
+
+  .lisa-img, .about-info {
+      padding-bottom: 0px;
+  }
+
+  .slow-columns-2 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    font-size: large;
+  }
+  .footer a {
+    font-size: large;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .flex-wrap-container {
+      margin: 0;
+  }
+  h1 {
+    font-size: x-large;
+    margin: 10px;
+  }
+  .footer-info, .footer-info a {
+    font-size: x-small;
+  }
 }
