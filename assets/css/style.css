@@ -245,13 +245,13 @@ a.button:hover {
 /* BUTTON  */
 a.button {
   background-color: #ff9eff;
-  border: 4px #1e1cac;
+  border: 3px #1e1cac;
   border-style: solid;
   width: 100%;
   cursor: pointer;
   transition: .3s;
   padding: 10px 0 10px 0;
-
+  border-radius: 25px;
   color: #1e1cac;
   font-size: large;
   font-family: 'Rubik', sans serif;
