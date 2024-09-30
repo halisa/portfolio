@@ -328,8 +328,9 @@ img.gallery:hover {
   max-width: 25%;
 }
 
-.column-4 > img, .column-4 > img {
+.column-4 > img {
   padding: 5px;
+  border-radius: 15px;
 }
 
 
@@ -337,6 +338,7 @@ img.gallery:hover {
   padding: 5px;
   transition: .2s ease;
   box-sizing: none;
+  border-radius: 15px;
 }
 .column-4 > div > img:hover,  .column-4 > a > img:hover  {
   background-color: #ff9eff;
@@ -367,6 +369,7 @@ img.gallery:hover {
 
 ::-webkit-scrollbar-thumb {
   background: #1e1cac; 
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
