@@ -13,10 +13,17 @@ h1 {
 
 h2 {
   font-family: 'Rubik', sans-serif;
+  width: 100%;
 }
 
 h3 {
   font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  /* font-weight:400; */
 }
 
 ul {
@@ -28,6 +35,16 @@ ul {
 p {
   font-size: larger;
   font-family: 'Rubik', sans-serif;
+}
+
+.description-container {
+  text-align: center;
+  padding: 30px 500px 30px 500px;
+  /* width: 100%; */
+}
+
+.process-container {
+  background-color: #ff9eff;
 }
 
 a {
@@ -191,7 +208,7 @@ a.button:hover {
 }
 
 .column-2 > img {
-  padding: 5px;
+  padding: 15px;
 }
 
 
@@ -200,7 +217,7 @@ a.button:hover {
   box-sizing: border-box;
 }
 
-.column {
+.column-3 {
   flex: 33.33%;
   max-width: 33.33%;
 }
@@ -211,12 +228,12 @@ a.button:hover {
   /* margin: 0 300px 0 300px; */
 }
    
-.column > div {
-  padding: 5px;
+.column-3 > div {
+  padding: 10px;
 }
 
-.column > img {
-  padding: 5px;
+.column-3 > img {
+  padding: 10px;
 }
 
 
@@ -376,14 +393,32 @@ img.gallery:hover {
 
 /* MOBILE */
 
-@media (max-width: 1300px){
-  .column-4 {
-    flex: 50%;
-    max-width: 50%;
+@media (max-width: 1700px){
+  .description-container {
+    padding: 20px 100px 20px 100px;
+    
+  }
+  .process-container {
+    margin-bottom:10px;
+    margin-top:10px;
   }
 }
 
+@media (max-width: 1300px){
+  .column-4, .column-3 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .description-container {
+    padding: 20px 15px 20px 15px;
+  }
+
+}
+
 @media (max-width: 700px) {
+  .process-container {
+    margin-bottom:50px;
+  }
   .column-4 {
     flex: 100%;
     max-width: 100%;
@@ -413,7 +448,7 @@ img.gallery:hover {
   .footer a {
     font-size: large;
   }
-  .column {
+  .column-3 {
     flex: 100%;
     max-width: 100%;
   }
