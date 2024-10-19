@@ -97,15 +97,18 @@ a.button:hover {
   font-size: x-large;
 }
 .navbar a, .footer a {
-  transition-duration: .3s;
-  background-color: #ffe8ff;
+
+  background: #ffe8ff;
 }
 .navbar a:hover, .footer a:hover {
-  background-color: #ff9eff;
+  background: radial-gradient(50% 50% at 50% 50%, 
+  #ff9eff 0%, 
+  rgba(255, 158, 255, 0) 100%);
+  /* background-color: #ff9eff; */
 }
 
 .heading a:hover {
-  background-color: #ffe8ff;
+  background: #ffe8ff;
 }
 
 
@@ -354,15 +357,22 @@ img.gallery:hover {
   padding: 10px;
 }
 
+.column-4 > div {
+ padding: 10px;
+}
 
-.column-4 > div > img,  .column-4 > a > img  {
-  padding: 10px;
+.column-4 > div > img,  .column-4 > div > a > img  {
   transition: .2s ease;
   box-sizing: none;
+  border-radius: 15px;
+  border: 2px #1e1cac solid;
 }
-.column-4 > div > img:hover,  .column-4 > a > img:hover  {
-  background-color: #ff9eff;
-  box-shadow: 0px 0px 0px 1px #ff9eff;
+.column-4 > div > img:hover,  .column-4 > div > a > img:hover  {
+  /* background-color: #ff9eff; */
+  border-radius: 15px;
+  border: 2px #1e1cac solid;
+  box-shadow: 6px 6px #ff9eff,
+  6px 6px 0px 2px #1e1cac;
   cursor: url('../cursor/pointer-pink.svg'), auto;
 }
 
@@ -371,30 +381,43 @@ img.gallery:hover {
   padding: 5px;
   transition: .2s ease;
   box-sizing: none;
+
 }
 .column-2 > a > img:hover {
   background-color: #ff9eff;
-  box-shadow: 0px 0px 0px 1px #ff9eff;
+  box-shadow: 0px 0px 0px 1px #ff9eff,;
   cursor: url('../cursor/pointer-pink.svg'), auto;
 }
 
 /* CUSTOM SCROLLBAR */
 ::-webkit-scrollbar {
-  width: 17px;
+  width: 15px;
+  
 }
 
 ::-webkit-scrollbar-track {
   background: #ffe8ff; 
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e1cac; 
+  background: #ff9eff; 
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+  border-radius: 15px;
 }
 
+/* INDEX HOMEPAGE */
+
+.index-extras-description{
+  text-align: center;
+}
+.index-extras-description > ul > li {
+  padding-bottom:5px;
+}
 
 /* MOBILE */
 
@@ -422,6 +445,16 @@ img.gallery:hover {
   }
 
 }
+
+/* BORDER EFFECT */
+
+.column-2 > img, .column-3 > img, .column-4 > img {
+  border-color: #1e1cac;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+/* RESPONSIVE WEB DESIGN */
 
 @media (max-width: 700px) {
   .process-container {
@@ -477,3 +510,8 @@ img.gallery:hover {
     margin-bottom: 100px;
   }
 }
+
+
+
+
+/* ANIMATE FADE IN ON SCROLL */
