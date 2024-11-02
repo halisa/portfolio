@@ -431,7 +431,7 @@ img.gallery:hover {
     margin-top:10px;
   }
   .about-container {
-    margin: 0;
+    margin: 25px 150px 0 150px;
   }
 }
 
@@ -443,15 +443,10 @@ img.gallery:hover {
   .description-container {
     padding: 20px 15px 20px 15px;
   }
+  .about-container {
+    margin: 0;
+  }
 
-}
-
-/* BORDER EFFECT */
-
-.column-2 > img, .column-3 > img, .column-4 > img {
-  border-color: #1e1cac;
-  border-width: 5px;
-  border-radius: 5px;
 }
 
 /* RESPONSIVE WEB DESIGN */
@@ -512,6 +507,13 @@ img.gallery:hover {
 }
 
 
+/* BORDER EFFECT */
+
+.column-2 > img, .column-3 > img, .column-4 > img {
+  border-color: #1e1cac;
+  border-width: 5px;
+  border-radius: 5px;
+}
 
 
 /* ANIMATE FADE IN ON SCROLL */
