@@ -33,7 +33,7 @@ ul {
 }
 
 p {
-  font-size: larger;
+  font-size:medium;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -423,7 +423,7 @@ img.gallery:hover {
 
 @media (max-width: 1700px){
   .description-container {
-    padding: 20px 100px 20px 100px;
+    padding: 20px 350px 20px 350px;
     
   }
   .process-container {
@@ -441,7 +441,7 @@ img.gallery:hover {
     max-width: 50%;
   }
   .description-container {
-    padding: 20px 15px 20px 15px;
+    padding: 20px 200px 20px 200px;
   }
   .about-container {
     margin: 0;
@@ -452,6 +452,9 @@ img.gallery:hover {
 /* RESPONSIVE WEB DESIGN */
 
 @media (max-width: 700px) {
+  .description-container {
+    padding: 20px 15px 20px 15px;
+  }
   .process-container {
     margin-bottom:50px;
   }
@@ -490,6 +493,7 @@ img.gallery:hover {
   }
   .flex-wrap-container {
       margin: 0;
+      margin-bottom: 50px;
   }
   h1 {
     font-size: x-large;
