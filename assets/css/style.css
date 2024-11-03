@@ -44,7 +44,7 @@ p {
 }
 
 .process-container {
-  background-color: #ff9eff;
+  /* background-color: #ff9eff; */
 }
 
 a {
@@ -104,11 +104,12 @@ a.button:hover {
   background: radial-gradient(50% 50% at 50% 50%, 
   #ff9eff 0%, 
   rgba(255, 158, 255, 0) 100%);
-  /* background-color: #ff9eff; */
 }
 
 .heading a:hover {
-  background: #ffe8ff;
+  background: radial-gradient(50% 50% at 50% 50%, 
+  #ff9eff 0%, 
+  rgba(255, 158, 255, 0) 100%);
 }
 
 
@@ -246,14 +247,17 @@ a.button:hover {
 
 
 /* BUTTON  */
+.button-container {
+  margin:35px;
+}
 a.button {
-  background-color: #ff9eff;
-  border: 3px #1e1cac;
+  background-color: #ffe8ff;
+  border: 2px #1e1cac;
   border-style: solid;
   width: 100%;
   cursor: pointer;
   transition: .3s;
-  padding: 10px 0 10px 0;
+  padding: 10px 20px 10px 20px;
   border-radius: 25px;
   color: #1e1cac;
   font-size: large;
@@ -264,8 +268,11 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #1e1cac;
-  color: #ff9eff;
+  background: radial-gradient(50% 50% at 50% 50%, 
+  #ff9eff 0%, 
+  rgba(255, 158, 255, 0) 100%)
+  /* background-color: #1e1cac; */
+  /* color: #ff9eff; */
 }
 
 /* MODAL */
