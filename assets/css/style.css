@@ -43,10 +43,6 @@ p {
   /* width: 100%; */
 }
 
-.process-container {
-  /* background-color: #ff9eff; */
-}
-
 a {
   font-family: 'Rubik', sans-serif;
   color: #1e1cac;
@@ -507,7 +503,7 @@ img.gallery:hover {
     margin: 10px;
   }
   .footer-info, .footer-info a {
-    font-size: x-small;
+    font-size: xx-small;
   }
   .content {
     padding: 50px 0 0 0;
