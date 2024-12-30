@@ -242,6 +242,20 @@ a.button:hover {
 }
 
 
+.column-6 {
+  flex: 16.66%;
+  max-width: 16.66%;
+}
+
+.column-6 > div {
+  padding: 10px;
+}
+
+.column-6 > img {
+  padding: 10px;
+}
+
+
 /* BUTTON  */
 .button-container {
   margin:35px;
@@ -439,7 +453,7 @@ img.gallery:hover {
 }
 
 @media (max-width: 1300px){
-  .column-4, .column-3 {
+  .column-6, .column-4, .column-3 {
     flex: 50%;
     max-width: 50%;
   }
@@ -461,7 +475,7 @@ img.gallery:hover {
   .process-container {
     margin-bottom:50px;
   }
-  .column-4 {
+  .column-6, .column-4 {
     flex: 100%;
     max-width: 100%;
   }
