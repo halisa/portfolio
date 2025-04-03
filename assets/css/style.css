@@ -405,25 +405,21 @@ img.gallery:hover {
 } */
 
 /* Macbook */
-/* @media screen and (min-width: 3000px) {
-#first-work {
-  top: 30px;
+@media screen and (min-width: 3000px) {
+h1 {
+  font-size: calc(3em + .1vw);
+}
+h2, h3, h4 {
+  font-size: 2.5em;
+}
+p, .button {
+  font-size: 2.25em;
+}
+footer {
+  font-size: 1.5em;
 }
 
-#second-work {
-  top: 270px;
 }
-
-#third-work {
-  z-index: 1; 
-  top: 80px;
-}
-
-#last-work {
-  top:250px; z-index: 2;
-}
-
-} */
 
 /* TABLET */
 
