@@ -418,6 +418,10 @@ p, .button {
 footer {
   font-size: 1.5em;
 }
+.description-container {
+  padding: 20px 500px 20px 500px;
+  
+}
 
 }
 
