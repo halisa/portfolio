@@ -383,6 +383,36 @@ img.gallery:hover {
   border-radius: 25px;
 }
 
+
+
+
+#banners-draft {
+  width: 50%;
+}
+
+#corn-gif {
+  width: 20%;
+}
+
+/* FOOTER NAV  */
+.footer-nav {
+  /* margin: 5px;
+  display: contents; */
+  margin: auto;
+  display: contents;
+  text-align: center;
+  
+}
+
+.footer-nav a {
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  /* background-color: #1e1cac;
+  color: #ffe8ff; */
+  border-radius: 20px;
+  margin: 5px;
+}
+
 /* CUSTOM SCROLLBAR */
 ::-webkit-scrollbar {
   width: 15px;
@@ -466,11 +496,22 @@ footer {
   .about-container {
     margin: 0;
   }
+  #banners-draft {
+    width: 75%;
+  }
+  
 }
 
 /* PHONE */
 
 @media (max-width: 715px) {
+  #banners-draft {
+    width: 90%;
+  }
+  
+  #corn-gif {
+    width: 75%;
+  }
   .description-container {
     padding: 20px 15px 20px 15px;
   }
