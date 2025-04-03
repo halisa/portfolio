@@ -377,7 +377,7 @@ img.gallery:hover {
   font-size: inherit;
   font-family: 'Rubik', sans-serif;
   display: inline-block;
-  margin: 0 5px 0 5px;
+  margin: 5px;
   background-color: #ff9eff;
   padding: 4px 8px 4px 8px;
   border-radius: 25px;
