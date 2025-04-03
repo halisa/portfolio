@@ -372,6 +372,17 @@ img.gallery:hover {
   /* cursor: url('../cursor/pointer-pink.svg'), auto; */
 }
 
+/* TAGS */
+.tags {
+  font-size: inherit;
+  font-family: 'Rubik', sans-serif;
+  display: inline-block;
+  margin: 0 5px 0 5px;
+  background-color: #ff9eff;
+  padding: 4px 8px 4px 8px;
+  border-radius: 25px;
+}
+
 /* CUSTOM SCROLLBAR */
 ::-webkit-scrollbar {
   width: 15px;
