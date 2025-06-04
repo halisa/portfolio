@@ -1,6 +1,5 @@
 const links = [
     "https://halisa.github.io/apisa.html",
-    "https://halisa.github.io/archive.html",
     "https://halisa.github.io/chiu.html",
     "https://halisa.github.io/city.html",
     "https://halisa.github.io/dvp.html",
@@ -10,6 +9,7 @@ const links = [
     "https://halisa.github.io/marcom.html",
     "https://halisa.github.io/moon.html",
     "https://halisa.github.io/omg.html",
+    "https://halisa.github.io/photo.html",
     "https://halisa.github.io/seatac.html",
     "https://halisa.github.io/slow.html"
 ]

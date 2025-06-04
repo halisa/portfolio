@@ -39,6 +39,10 @@ h2, h3, h4, ul, p, a {
   font-family: 'Rubik', sans-serif;
 }
 
+h2, h3, h4, ul, p {
+    padding: 8px;
+}
+
 h2 {
   width: 100%;
   font-size: x-large;
@@ -60,12 +64,6 @@ ul {
 p {
   font-size:medium;
   font-size: 1em;
-}
-
-.description-container {
-  text-align: center;
-  padding: 30px 500px 30px 500px;
-  width: 100%;
 }
 
 a {
@@ -211,7 +209,6 @@ footer a:hover {
 .game-info {
   flex: 33.33%;
   max-width: 33.33%;
-  /* margin-right:20px; */
 }
 
 .column-twothirds img {
@@ -279,6 +276,7 @@ footer a:hover {
 
 .s-button p {
   transform: translateY(-10px);
+  padding: 0;
 }
 
 .s-button:hover {
@@ -501,9 +499,9 @@ img.gallery {
 
 .footer-nav a {
   text-decoration:dotted;
-  padding: 0 10px 0 10px;
+  padding: 0;
   border-radius: 20px;
-  margin: 10px;
+  margin: 8px;
   scale: 1;
   transition: .2s;
   display: block;
@@ -519,7 +517,8 @@ img.gallery {
 
 .description-container {
   padding: 20px 150px 20px 150px;
-  
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -549,6 +548,51 @@ img.gallery {
   scale: 1.05;
 }
 
+/* TABLET */
+
+@media (max-width: 1400px){
+  .description-container {
+    margin-top: 30px;
+    padding: 20px 350px 20px 350px;
+    
+  }
+  .process-container {
+    margin-bottom:10px;
+    margin-top:10px;
+  }
+  .about-container {
+    margin: 25px 150px 0 150px;
+  }
+  .flex-wrap-container {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .game-info {
+    padding: 10px;
+  }
+
+  #bio, #hero-img {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1300px){
+  .column-6, .column-4, .column-3 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .description-container {
+    padding: 20px 200px 20px 200px;
+  }
+  .about-container {
+    margin: 0;
+  }
+  #banners-draft {
+    width: 75%;
+  }
+  
+}
 
 /* PHONE */
 
@@ -562,6 +606,119 @@ img.gallery {
   .navbar {
     height: 200px;
   }
+
+  #banners-draft {
+    width: 90%;
+  }
+  #corn-gif {
+    width: 75%;
+  }
+
+  .description-container {
+    padding: 20px 15px 20px 15px;
+  }
+  .process-container {
+    margin-bottom:50px;
+  }
+  .column-6, .column-4 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column-2 {
+      flex: 100%;
+      max-width: 100%;
+  }
+  .column-3, .column-about {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .featworks-heading {
+    padding: 10px;
+  }
+  .column-twothirds {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .featworks-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .featworks {
+    flex-direction: column;
+  }
+  #first-work, #second-work, #third-work, #last-work {
+    top: 0;
+  }
+  
+
+  #bio {
+    padding: 0 50px 0 50px;
+  }
+  
+  
+  .featworks > div > div > a > img{
+    position: relative;
+    padding: 15px 10px 15px 10px;
+  }
+  
+  
+
+
+  .slow-columns-2 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    /* font-size: large; */
+  }
+ 
+  .column-3 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .flex-wrap-container {
+      margin: 0;
+      margin-bottom: 50px;
+      margin-top: 130px;
+  }
+  h1 {
+    /* font-size: xx-large; */
+    margin: 10px;
+  }
+ 
+  .content {
+    padding: 50px 0 0 0;
+  }
+  .about-container {
+    margin-bottom: 100px;
+  }
+
+
+ 
+.card-text-container {
+  margin:15px;
+}
+
+.card:hover {
+  scale: 1.01;
+}
+
+.game-container {
+  flex-direction: column;
+}
+
+.game-info {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 50px 0 50px;
+}
 
 }
 
