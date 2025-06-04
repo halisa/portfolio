@@ -19,6 +19,7 @@ body {
   color: var(--darkblue);
   overflow: auto;
   -webkit-font-smoothing: antialiased;
+  
 }
 
 .dark-mode {
@@ -169,7 +170,6 @@ a.button:hover {
 
 .nav-items a:hover {
   text-decoration: underline;
-  
   text-decoration-thickness: 4px;
 }
 
@@ -192,6 +192,35 @@ footer img {
 footer {
   position: absolute;
   
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+.game-container {
+  margin-top: 50px;
+  display: flex;
+}
+
+.game-info {
+  flex: 33.33%;
+  max-width: 33.33%;
+  /* margin-right:20px; */
+}
+
+.column-twothirds img {
+  padding: 10px;
+}
+
+.column-twothirds {
+  flex: 66.66%;
+  max-width: 66.66%;
 }
 
 /* FEATURED WORKS SECTION  */
@@ -443,6 +472,16 @@ img.gallery {
   border-radius: 25px;
 }
 
+.tags-left {
+  font-size: inherit;
+  font-family: 'Rubik', sans-serif;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  background-color: var(--babyblue);
+  padding: 4px 8px 4px 8px;
+  border-radius: 25px;
+}
+
 #banners-draft {
   width: 50%;
 }
@@ -453,7 +492,6 @@ img.gallery {
 
 /* FOOTER NAV  */
 .footer-nav {
-  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
