@@ -658,6 +658,10 @@ img.gallery {
     margin: 0 40px 0 40px;
     
   }
+
+  #archive {
+    padding-top: 110px;
+  }
  
   #first-work, #second-work, #third-work, #last-work {
     top: 0;
