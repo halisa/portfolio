@@ -4,6 +4,23 @@
   font-family: 'Rubik', sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
 :root {
   --white: #ffffff;
   --babyblue: #a0b4e0;
@@ -538,8 +555,6 @@ img.gallery {
 #chiu-menu img {
   padding: 10px;
   width:100%;
-  flex: 100%;
-  max-width: 100%;
 }
 
 /* TABLET */
@@ -640,7 +655,10 @@ img.gallery {
   }
   .featworks {
     flex-direction: column;
+    margin: 0 40px 0 40px;
+    
   }
+ 
   #first-work, #second-work, #third-work, #last-work {
     top: 0;
   }
