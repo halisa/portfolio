@@ -481,7 +481,7 @@ img.gallery {
 }
 
 .footer-nav a {
-  text-decoration:dotted;
+  text-decoration:none;
   padding: 0;
   border-radius: 20px;
   margin: 8px;
