@@ -495,8 +495,8 @@ img.gallery {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 30px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .footer-nav a {
