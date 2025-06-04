@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-
+  font-family: 'Rubik', sans-serif;
 }
 
 :root {
@@ -191,6 +191,7 @@ footer img {
 
 footer {
   position: absolute;
+  
 }
 
 /* FEATURED WORKS SECTION  */
@@ -228,9 +229,11 @@ footer {
 /* SURPRISE ME Button */
 
 .s-button {
+  border:0;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   line-height: 1;
   text-decoration: none;
   color: var(--white);
@@ -242,6 +245,11 @@ footer {
   border-bottom: 5px solid var(--darkblue);
   transition: 0.3s;
   background-color: var(--brightblue);
+  cursor: pointer;
+}
+
+.s-button p {
+  transform: translateY(-10px);
 }
 
 .s-button:hover {
@@ -446,20 +454,29 @@ img.gallery {
 /* FOOTER NAV  */
 .footer-nav {
   margin: auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  width: 100%;
   margin-bottom: 30px;
 }
 
 .footer-nav a {
   text-decoration:dotted;
   padding: 0 10px 0 10px;
-    display: inline-block;
   border-radius: 20px;
-  margin: 5px;
+  margin: 10px;
+  scale: 1;
+  transition: .2s;
+  display: block;
 }
 
+.footer-nav a:hover {
+  scale: 1.075;
+}
+
+.footer-nav h4 {
+  padding-top: 35px;
+}
 
 .description-container {
   padding: 20px 150px 20px 150px;
