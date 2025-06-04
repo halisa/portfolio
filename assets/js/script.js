@@ -9,7 +9,6 @@ const links = [
     "https://halisa.github.io/marcom.html",
     "https://halisa.github.io/moon.html",
     "https://halisa.github.io/omg.html",
-    "https://halisa.github.io/photo.html",
     "https://halisa.github.io/seatac.html",
     "https://halisa.github.io/slow.html"
 ]

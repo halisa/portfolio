@@ -70,26 +70,9 @@ a {
   color: var(--darkblue);
 }
 
-
-
-/* CURSOR */
-
-html {
-  /* cursor: url('../cursor/pointer-blue.svg'), auto; */
-}
-/* 
-a:hover {
-  cursor: url('../cursor/pointer-blue.svg'), auto;
-}
-
-a.button:hover {
-  cursor: url('../cursor/pointer-pink.svg'), auto;
-} */
-
 /* NAVBAR */
 
 .navbar a {
-  /* text-decoration: none; */
   font-size: x-large;
   font-size: 1em;
   background: var(--white);
@@ -521,9 +504,6 @@ img.gallery {
   width: 100%;
 }
 
-
-
-
 .card {
   transition: .2s ease;
   box-sizing: none;
@@ -721,27 +701,3 @@ img.gallery {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* BORDER EFFECT */
-/* .column-2 > img, .column-3 > img, .column-4 > img {
-  border-color: #1e1cac;
-  border-width: 5px;
-  border-radius: 5px;
-} */
