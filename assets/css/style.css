@@ -19,7 +19,7 @@ body {
   color: var(--darkblue);
   overflow: auto;
   -webkit-font-smoothing: antialiased;
-  
+  overflow-x: hidden;
 }
 
 .dark-mode {
@@ -496,6 +496,7 @@ img.gallery {
   flex-direction: column;
   text-align: center;
   margin-bottom: 30px;
+  margin: auto;
 }
 
 .footer-nav a {
