@@ -430,17 +430,17 @@ img.gallery {
  margin: 10px;
 }
 
-.column-2 > a > img {
-  /* padding: 5px;
+/* .column-2 > a > img {
+  padding: 5px;
   transition: .2s ease;
-  box-sizing: none; */
+  box-sizing: none;
 
 }
 .column-2 > a > img:hover {
-  /* background-color: #ff9eff;
-  box-shadow: 0px 0px 0px 1px #ff9eff,; */
-  /* cursor: url('../cursor/pointer-pink.svg'), auto; */
-}
+  background-color: #ff9eff;
+  box-shadow: 0px 0px 0px 1px #ff9eff,;
+  cursor: url('../cursor/pointer-pink.svg'), auto;
+} */
 
 /* TAGS */
 .tags {
