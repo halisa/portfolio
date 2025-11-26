@@ -312,12 +312,17 @@ footer {
   margin: 75px 200px 0 200px;
 }
 
+.column-1 {
+  flex: 100%;
+  max-width: 100%;
+}
+
 .column-2 {
   flex: 50%;
   max-width: 50%;
 }
 
-.column-2 > img {
+.column-1, .column-2 > img {
   padding: 10px;
 }
 
