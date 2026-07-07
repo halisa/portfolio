@@ -538,8 +538,8 @@ img.gallery {
   text-decoration: none;
 }
 .card-text-container {
-  padding-left: 16px;
   margin:8px;
+  text-align: center;
 }
 
 .card img {
